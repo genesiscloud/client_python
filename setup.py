@@ -11,21 +11,21 @@ else:  # Assuming we don't run setup in order to publish under python 2.6
 
 
 setup(
-    name="prometheus_client",
-    version="0.9.0",
+    name="prometheus_client_gc",
+    version="0.9.1",
     author="Brian Brazil",
     author_email="brian.brazil@robustperception.io",
-    description="Python client for the Prometheus monitoring system.",
+    description="Fully originated from the official client of Prometheus monitoring system with only directory renamed.",
     long_description=long_description,
     long_description_content_type='text/markdown',
     license="Apache Software License 2.0",
     keywords="prometheus monitoring instrumentation client",
     url="https://github.com/prometheus/client_python",
     packages=[
-        'prometheus_client',
-        'prometheus_client.bridge',
-        'prometheus_client.openmetrics',
-        'prometheus_client.twisted',
+        'prometheus_client_gc',
+        'prometheus_client_gc.bridge',
+        'prometheus_client_gc.openmetrics',
+        'prometheus_client_gc.twisted',
     ],
     extras_require={
         'twisted': ['twisted'],
